@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://8imf87cskdvw"]
+
+[ext_resource type="Script" uid="uid://57e2ddya0hwo" path="res://MiniG/minigames/adsgame/adsgame.gd" id="1_7rsn1"]
+[ext_resource type="Texture2D" uid="uid://daj57j7mwfq2y" path="res://MiniG/minigames/adsgame/bg.jpg" id="2_i1c6i"]
+
+[node name="AdsGame" type="Control" unique_id=1962314233]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7rsn1")
+item_path = "res://MiniG/minigames/adsgame/ads"
+
+[node name="Background" type="TextureRect" parent="." unique_id=1471942298]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 655.0
+texture = ExtResource("2_i1c6i")
+expand_mode = 1
+
+[node name="PhoneBody" type="Panel" parent="." unique_id=651296643]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 327.0
+offset_right = 576.0
+offset_bottom = 367.0
+
+[node name="Screen" type="Panel" parent="." unique_id=1005481766]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 325.0
+offset_right = 576.0
+offset_bottom = 365.0
+
+[node name="AdsContainer" type="Control" parent="Screen" unique_id=1575795517]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TimerLabel" type="Label" parent="." unique_id=961321603]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CounterLabel" type="Label" parent="." unique_id=86344396]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 44.0
+offset_right = 43.0
+offset_bottom = 67.0
+
+[node name="StatusLabel" type="Label" parent="." unique_id=370269659]
+layout_mode = 0
+offset_top = 75.0
+offset_right = 40.0
+offset_bottom = 98.0

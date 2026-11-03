@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://b56xmjnpnsya2"]
+
+[ext_resource type="Script" uid="uid://b1siq0gspud6a" path="res://MiniG/minigames/exercise (night)/exercise.gd" id="1_5fv4d"]
+[ext_resource type="Texture2D" uid="uid://ciqjy3x7rdlwk" path="res://MiniG/minigames/exercise (night)/Push Button/repbutton.png" id="2_kwc2u"]
+[ext_resource type="Texture2D" uid="uid://16eyvw8fbi34" path="res://MiniG/minigames/exercise (night)/Push Button/HOLD.png" id="3_md1x7"]
+[ext_resource type="Texture2D" uid="uid://c3dnew5grjr57" path="res://MiniG/minigames/exercise (night)/Push-ups/pushup1.png" id="4_ast1d"]
+[ext_resource type="Texture2D" uid="uid://b4nekj6o8ryrm" path="res://MiniG/minigames/exercise (night)/Push-ups/pushup2.png" id="5_occhj"]
+[ext_resource type="Texture2D" uid="uid://2rtsodn7wy4a" path="res://MiniG/minigames/exercise (night)/Push-ups/pushup3.png" id="6_ss8py"]
+[ext_resource type="Texture2D" uid="uid://djmecymuvient" path="res://MiniG/minigames/exercise (night)/Push-ups/pushup4.png" id="7_swoxp"]
+[ext_resource type="Texture2D" uid="uid://ducfchci36xk2" path="res://MiniG/minigames/exercise (night)/Push-ups/pushup5.png" id="8_xloui"]
+[ext_resource type="Texture2D" uid="uid://pu3ooasi5fd6" path="res://MiniG/minigames/exercise (night)/Push-ups/pushup6.png" id="9_s0vi7"]
+[ext_resource type="Texture2D" uid="uid://ckn1w5vmm8pae" path="res://MiniG/minigames/exercise (night)/Sit-ups/situps6.png" id="10_7cfps"]
+[ext_resource type="Texture2D" uid="uid://ceishys5iy6ca" path="res://MiniG/minigames/exercise (night)/Sit-ups/situps5.png" id="11_yqqhy"]
+[ext_resource type="Texture2D" uid="uid://b5e8fidnar4pj" path="res://MiniG/minigames/exercise (night)/Sit-ups/situps4.png" id="12_qmwts"]
+[ext_resource type="Texture2D" uid="uid://beswh0bwu4hob" path="res://MiniG/minigames/exercise (night)/Sit-ups/situps3.png" id="13_epbnh"]
+[ext_resource type="Texture2D" uid="uid://dwhyhk6prt4iv" path="res://MiniG/minigames/exercise (night)/Sit-ups/situps2.png" id="14_ssoou"]
+[ext_resource type="Texture2D" uid="uid://cx754b1y8olyw" path="res://MiniG/minigames/exercise (night)/Squat/squat1.png" id="15_lg86d"]
+[ext_resource type="Texture2D" uid="uid://dkxm8067o8nos" path="res://MiniG/minigames/exercise (night)/Squat/squat3.png" id="16_rgyl8"]
+[ext_resource type="Texture2D" uid="uid://p4r81oj4ifak" path="res://MiniG/minigames/exercise (night)/Squat/squat4.png" id="17_ojgvf"]
+[ext_resource type="Texture2D" uid="uid://jwogpuw5qt16" path="res://MiniG/minigames/exercise (night)/Squat/squat5.png" id="18_jnskq"]
+[ext_resource type="Texture2D" uid="uid://d4hq6wj6ldxto" path="res://MiniG/minigames/exercise (night)/Squat/squat6.png" id="19_mlwi2"]
+[ext_resource type="Texture2D" uid="uid://cjoxl48fm0tij" path="res://MiniG/minigames/exercise (night)/pull-ips 1/pullup1.png" id="20_xvjl3"]
+[ext_resource type="Texture2D" uid="uid://bm3n678ukgg7r" path="res://MiniG/minigames/exercise (night)/pull-ips 1/pullup2.png" id="21_jed3l"]
+[ext_resource type="Texture2D" uid="uid://oi0dxtpm85al" path="res://MiniG/minigames/exercise (night)/pull-ips 1/pullup3.png" id="22_tss8i"]
+[ext_resource type="Texture2D" uid="uid://dn01rshd2rdb3" path="res://MiniG/minigames/exercise (night)/pull-ips 1/pullup4.png" id="23_dmhmf"]
+[ext_resource type="Texture2D" uid="uid://cqhairqu25e45" path="res://MiniG/minigames/exercise (night)/pull-ips 1/pullup5.png" id="24_bab06"]
+[ext_resource type="Texture2D" uid="uid://yfupbsnyaqq3" path="res://MiniG/minigames/exercise (night)/pull-ips 1/pullup6.png" id="25_igk5d"]
+[ext_resource type="Texture2D" uid="uid://dp2rorwi0r7cr" path="res://MiniG/minigames/exercise (night)/room exercise night.jpg" id="26_xyi6v"]
+[ext_resource type="Texture2D" uid="uid://4sbfdfr6kvq7" path="res://MiniG/minigames/exercise (night)/Push Button/Pushedrep.png" id="27_wlauc"]
+[ext_resource type="Texture2D" uid="uid://bq205l85a18rh" path="res://MiniG/minigames/exercise (night)/Push Button/pushworkout.png" id="28_5uu5x"]
+[ext_resource type="Texture2D" uid="uid://cu70sqmlr8hx" path="res://MiniG/minigames/exercise (night)/Push Button/pushedworkout.png" id="29_y5jad"]
+[ext_resource type="Texture2D" uid="uid://pfpanf7dlj36" path="res://MiniG/minigames/exercise (night)/Push Button/Hover.png" id="30_03gt0"]
+
+[node name="Exercise(Night" type="Control" unique_id=990383830]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_right = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5fv4d")
+rep_idle_tex = ExtResource("2_kwc2u")
+rep_ready_tex = ExtResource("3_md1x7")
+pushup_frames = Array[Texture2D]([ExtResource("4_ast1d"), ExtResource("5_occhj"), ExtResource("6_ss8py"), ExtResource("7_swoxp"), ExtResource("8_xloui"), ExtResource("9_s0vi7")])
+situp_frames = Array[Texture2D]([ExtResource("10_7cfps"), ExtResource("11_yqqhy"), ExtResource("12_qmwts"), ExtResource("13_epbnh"), ExtResource("14_ssoou"), ExtResource("14_ssoou")])
+squat_frames = Array[Texture2D]([ExtResource("15_lg86d"), ExtResource("16_rgyl8"), ExtResource("17_ojgvf"), ExtResource("18_jnskq"), ExtResource("18_jnskq"), ExtResource("19_mlwi2")])
+pullup_frames = Array[Texture2D]([ExtResource("20_xvjl3"), ExtResource("21_jed3l"), ExtResource("22_tss8i"), ExtResource("23_dmhmf"), ExtResource("24_bab06"), ExtResource("25_igk5d")])
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1367340664]
+layout_mode = 0
+offset_left = -644.0
+offset_top = -315.0
+offset_right = 1156.0
+offset_bottom = 764.0
+texture = ExtResource("26_xyi6v")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=336829870]
+visible = false
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 270.0
+
+[node name="Bar" type="ProgressBar" parent="." unique_id=1329032317]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 93.0
+offset_right = 856.0
+offset_bottom = 210.0
+theme_override_colors/font_outline_color = Color(0.99999994, 0.14050102, 0.15016147, 1)
+
+[node name="CountdownLabel" type="Label" parent="." unique_id=2000310321]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 128.0
+offset_right = 506.0
+offset_bottom = 151.0
+
+[node name="Label" type="Label" parent="." unique_id=219245887]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.22500001
+anchor_bottom = 0.018000001
+offset_left = 484.0
+offset_top = 225.0
+offset_right = 491.0
+offset_bottom = 243.14
+
+[node name="RepButton" type="TextureButton" parent="." unique_id=1770820315]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 300.0
+offset_right = 1080.0
+offset_bottom = 441.0
+texture_normal = ExtResource("2_kwc2u")
+texture_pressed = ExtResource("27_wlauc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PushButton" type="TextureButton" parent="." unique_id=1322675518]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 450.0
+offset_right = 1400.0
+offset_bottom = 700.0
+scale = Vector2(0.47525996, 0.5729486)
+texture_normal = ExtResource("28_5uu5x")
+texture_pressed = ExtResource("29_y5jad")
+texture_hover = ExtResource("30_03gt0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="StatusLabel" type="Label" parent="." unique_id=512531225]
+layout_mode = 0
+offset_left = 558.0
+offset_top = 276.0
+offset_right = 928.0
+offset_bottom = 361.0
+
+[node name="Pose" type="Sprite2D" parent="." unique_id=1846024404]
+texture_filter = 1
+position = Vector2(527, 607)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_ast1d")
+
+[node name="InjuredLabel" type="Label" parent="." unique_id=1743022271]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 276.0
+offset_right = 731.0
+offset_bottom = 353.0
+theme_override_colors/font_color = Color(0.6, 0.003921569, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "INJURED!"
+
+[connection signal="pressed" from="RepButton" to="." method="_on_rep_button_pressed"]
+[connection signal="pressed" from="PushButton" to="." method="_on_push_button_pressed"]

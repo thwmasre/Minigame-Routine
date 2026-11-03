@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bx36460fp63w2"]
+
+[ext_resource type="Script" uid="uid://j6kxg1nr5s6o" path="res://MiniG/minigames/exercise (night)/tap_meter.gd" id="1_7rkos"]
+
+[node name="TapMeter" type="Control" unique_id=990383830]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7rkos")
+
+[node name="Bar" type="ProgressBar" parent="." unique_id=1329032317]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 700.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="." unique_id=219245887]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ConfirmButton" type="Button" parent="." unique_id=820847925]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 70.0
+text = "Stop!"
+
+[connection signal="pressed" from="ConfirmButton" to="." method="_on_confirm_button_pressed"]

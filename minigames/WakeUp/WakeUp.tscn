@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://h46t73kcwlho"]
+
+[ext_resource type="Script" uid="uid://b124nexfkwknk" path="res://MiniG/minigames/WakeUp/wake_up.gd" id="1_2q52r"]
+[ext_resource type="Texture2D" uid="uid://c8s57n66n1y3o" path="res://MiniG/minigames/WakeUp/Sleep/sleep1.jpg" id="2_ogbth"]
+[ext_resource type="Texture2D" uid="uid://deoyrlmw8sf22" path="res://MiniG/minigames/WakeUp/Sleep/sleep2.jpg" id="3_tu0ij"]
+
+[node name="WakeUp" type="Control" unique_id=1424330616]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2q52r")
+frame1 = ExtResource("2_ogbth")
+frame2 = ExtResource("3_tu0ij")
+
+[node name="Background" type="TextureRect" parent="." unique_id=73809398]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Bed" type="TextureButton" parent="." unique_id=905906908]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WakeButton" type="Button" parent="." unique_id=1702779044]
+layout_mode = 0
+offset_left = 501.0
+offset_top = 467.0
+offset_right = 651.0
+offset_bottom = 567.0
+text = "Wake Up"
+
+[node name="FrameTimer" type="Timer" parent="." unique_id=598781545]
+autostart = true

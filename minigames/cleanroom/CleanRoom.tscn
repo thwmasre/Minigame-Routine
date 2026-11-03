@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://b6rg6unidnvou"]
+
+[ext_resource type="Script" uid="uid://77h8885rkywv" path="res://MiniG/minigames/cleanroom/clean_room.gd" id="1_gpy0r"]
+[ext_resource type="Texture2D" uid="uid://v67ihnviyh4l" path="res://MiniG/minigames/cleanroom/Bed.jpg" id="2_p7wxq"]
+[ext_resource type="Texture2D" uid="uid://m8e7sgeqlynx" path="res://MiniG/minigames/cleanroom/Alarm/alarm_frame1.png" id="2_rthkb"]
+[ext_resource type="Texture2D" uid="uid://vf2g00oc8a2f" path="res://MiniG/minigames/cleanroom/Room.jpg" id="3_1vxph"]
+[ext_resource type="Texture2D" uid="uid://xgu82tgi3n1f" path="res://MiniG/minigames/cleanroom/Alarm/alarm_frame2.png" id="3_rpkub"]
+[ext_resource type="Texture2D" uid="uid://b3uo38maunpr0" path="res://MiniG/minigames/cleanroom/Computer.jpg" id="4_l4m8f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rthkb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rpkub"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tfbic"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p7wxq"]
+
+[node name="CleanRoom" type="Control" unique_id=2064898011]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gpy0r")
+bg_bedside = ExtResource("2_p7wxq")
+bg_table = ExtResource("3_1vxph")
+bg_window = ExtResource("4_l4m8f")
+alarm_frame1 = ExtResource("2_rthkb")
+alarm_frame2 = ExtResource("3_rpkub")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1213376607]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="SpotTable" type="Control" parent="." unique_id=1959583080]
+anchors_preset = 0
+offset_left = 150.0
+offset_top = 250.0
+offset_right = 550.0
+offset_bottom = 550.0
+
+[node name="SpotBed" type="Control" parent="." unique_id=2084608880]
+anchors_preset = 0
+offset_left = 500.0
+offset_top = 250.0
+offset_right = 900.0
+offset_bottom = 550.0
+
+[node name="SpotWindow" type="Control" parent="." unique_id=1543147838]
+anchors_preset = 0
+offset_left = 850.0
+offset_top = 250.0
+offset_right = 1100.0
+offset_bottom = 550.0
+
+[node name="ItemButton" type="Button" parent="." unique_id=1274961711]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 250.0
+offset_right = 180.0
+offset_bottom = 280.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rthkb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rpkub")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tfbic")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p7wxq")
+
+[node name="ChoicePanel" type="Control" parent="." unique_id=2140299174]
+anchors_preset = 0
+offset_left = 450.0
+offset_top = 450.0
+offset_right = 700.0
+offset_bottom = 530.0
+
+[node name="AlarmClock" type="TextureRect" parent="ChoicePanel" unique_id=1845025549]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -433.0
+offset_right = 26.0
+offset_bottom = -347.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TimerLabel" type="Label" parent="ChoicePanel" unique_id=1820856018]
+layout_mode = 0
+offset_left = 47.0
+offset_top = -389.0
+offset_right = 87.0
+offset_bottom = -366.0
+
+[node name="NeedButton" type="Button" parent="ChoicePanel" unique_id=1029736379]
+layout_mode = 0
+offset_right = 110.0
+offset_bottom = 60.0
+text = "Thing"
+
+[node name="TrashButton" type="Button" parent="ChoicePanel" unique_id=1745266792]
+layout_mode = 0
+offset_left = 130.0
+offset_right = 240.0
+offset_bottom = 60.0
+text = "Trash"
+
+[node name="AlmanacButton" type="Button" parent="." unique_id=1155268938]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 20.0
+offset_right = 1120.0
+offset_bottom = 60.0
+text = "Almanac"
+
+[node name="AlmanacPanel" type="Panel" parent="." unique_id=1580022625]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 150.0
+offset_right = 876.0
+offset_bottom = 500.0
+
+[node name="AlmanacImage" type="TextureRect" parent="AlmanacPanel" unique_id=1788767319]
+layout_mode = 0
+offset_right = 600.0
+offset_bottom = 350.0
+expand_mode = 1
+
+[node name="AlmanacLabel" type="Label" parent="AlmanacPanel" unique_id=201266974]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 265.0
+offset_right = 316.0
+offset_bottom = 353.0
+theme_override_colors/font_color = Color(1.92523e-07, 0.8504775, 0.8508374, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5411765)
+theme_override_font_sizes/font_size = 64
+
+[node name="AlmanacClose" type="Button" parent="AlmanacPanel" unique_id=1496776457]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 280.0
+offset_right = 570.0
+offset_bottom = 320.0
+text = "Close"
+
+[node name="AlmanacPrev" type="Button" parent="AlmanacPanel" unique_id=530956076]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 280.0
+offset_right = 110.0
+offset_bottom = 320.0
+text = "<"
+
+[node name="AlmanacNext" type="Button" parent="AlmanacPanel" unique_id=1189308043]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 280.0
+offset_right = 230.0
+offset_bottom = 320.0
+text = ">"
+
+[node name="RoundLabel" type="Label" parent="." unique_id=1494063452]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 20.0
+offset_right = 80.0
+offset_bottom = 43.0
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1358623667]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 580.0
+offset_right = 80.0
+offset_bottom = 603.0
+
+[node name="SpotTimerLabel" type="Label" parent="." unique_id=535700300]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SpotAlarmClock" type="TextureRect" parent="." unique_id=1374260787]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 418.0
+offset_top = 17.0
+offset_right = -426.0
+offset_bottom = -465.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="ItemButton" to="." method="_on_item_button_pressed"]
+[connection signal="pressed" from="ChoicePanel/NeedButton" to="." method="_on_need_button_pressed"]
+[connection signal="pressed" from="ChoicePanel/TrashButton" to="." method="_on_trash_button_pressed"]
+[connection signal="pressed" from="AlmanacButton" to="." method="_on_almanac_button_pressed"]
+[connection signal="pressed" from="AlmanacPanel/AlmanacClose" to="." method="_on_almanac_close_pressed"]
+[connection signal="pressed" from="AlmanacPanel/AlmanacPrev" to="." method="_on_almanac_prev_pressed"]
+[connection signal="pressed" from="AlmanacPanel/AlmanacNext" to="." method="_on_almanac_next_pressed"]

@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://c0y5uo0b345d1"]
+
+[ext_resource type="Script" uid="uid://yf2if0ixxkhu" path="res://MiniG/minigames/appgame/apps_game.gd" id="1_5w4yi"]
+[ext_resource type="Texture2D" uid="uid://c5hq47rshfmv3" path="res://MiniG/minigames/appgame/wallpapaer.png" id="2_00tbv"]
+
+[node name="AppsGame" type="Control" unique_id=1372749432]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5w4yi")
+item_path = "res://MiniG/minigames/appgame/appui"
+
+[node name="Background" type="ColorRect" parent="." unique_id=701579076]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PhoneBody" type="Panel" parent="." unique_id=76853232]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Screen" type="Panel" parent="." unique_id=775213387]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Wallpaper" type="TextureRect" parent="Screen" unique_id=1517371094]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_00tbv")
+
+[node name="CardsContainer" type="Control" parent="Screen" unique_id=483055233]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TimerLabel" type="Label" parent="." unique_id=171409750]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CounterLabel" type="Label" parent="." unique_id=880156278]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1990358524]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

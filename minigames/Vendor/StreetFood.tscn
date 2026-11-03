@@ -1,0 +1,441 @@
+[gd_scene format=3 uid="uid://dvbtuoskutf0j"]
+
+[ext_resource type="Script" uid="uid://dyxcwyguyjveb" path="res://MiniG/minigames/Vendor/street_food.gd" id="1_jeenx"]
+[ext_resource type="Texture2D" uid="uid://cs3iusrtk2v7x" path="res://MiniG/minigames/Vendor/streat/hand1.png" id="2_e3ard"]
+[ext_resource type="Texture2D" uid="uid://dp61023fy6qjk" path="res://MiniG/minigames/Vendor/streat/table.jpg" id="2_qdggj"]
+[ext_resource type="Texture2D" uid="uid://dio8b301moqhr" path="res://MiniG/minigames/Vendor/streat/hand2.png" id="3_0lb2u"]
+[ext_resource type="Texture2D" uid="uid://c7rg1v8j80sj3" path="res://MiniG/minigames/Vendor/streat/df_empty.png" id="4_5bce7"]
+[ext_resource type="Texture2D" uid="uid://dtsm0eb4duonq" path="res://MiniG/minigames/Vendor/streat/hand3.png" id="4_c3nt4"]
+[ext_resource type="Texture2D" uid="uid://biqommfn252sm" path="res://MiniG/minigames/Vendor/streat/order_sheet1.png" id="5_8k8mc"]
+[ext_resource type="Texture2D" uid="uid://bjwqvsj5shmj2" path="res://MiniG/minigames/Vendor/streat/df_oiled.png" id="5_w212r"]
+[ext_resource type="Texture2D" uid="uid://iw8pkcg7cjo3" path="res://MiniG/minigames/Vendor/streat/rcon_lid.png" id="6_22yui"]
+[ext_resource type="Texture2D" uid="uid://d4f8iig7ism8" path="res://MiniG/minigames/Vendor/streat/strainer1.png" id="6_e3ard"]
+[ext_resource type="Texture2D" uid="uid://biu68emrym24l" path="res://MiniG/minigames/Vendor/streat/order_sheet2.png" id="6_h1ex6"]
+[ext_resource type="Texture2D" uid="uid://d064jh56qi1ay" path="res://MiniG/minigames/Vendor/streat/strainer2.png" id="7_0lb2u"]
+[ext_resource type="Texture2D" uid="uid://bk8tknyf4i7gu" path="res://MiniG/minigames/Vendor/streat/rcon.png" id="7_1fl3x"]
+[ext_resource type="Texture2D" uid="uid://cnbixnlj8xuiw" path="res://MiniG/minigames/Vendor/streat/table-1.jpg" id="8_8mmnc"]
+[ext_resource type="Texture2D" uid="uid://2oc4b5dhyqqm" path="res://MiniG/minigames/Vendor/streat/tongs.png" id="8_c3nt4"]
+[ext_resource type="Script" uid="uid://du1gfkxde3c53" path="res://MiniG/minigames/Vendor/strainer.gd" id="9_22yui"]
+[ext_resource type="Texture2D" uid="uid://c0s7atc0m1rt6" path="res://MiniG/minigames/Vendor/streat/cup.png" id="9_kblgt"]
+[ext_resource type="Texture2D" uid="uid://ddv7m8d31p06q" path="res://MiniG/minigames/Vendor/streat/bottle.png" id="10_22yui"]
+[ext_resource type="Texture2D" uid="uid://d0w25yc2a50j2" path="res://MiniG/minigames/Vendor/streat/table1.jpg" id="10_dymrs"]
+[ext_resource type="Texture2D" uid="uid://cpuw6oblmtmfp" path="res://MiniG/minigames/Vendor/streat/bottle_coconut.png" id="11_1fl3x"]
+[ext_resource type="Texture2D" uid="uid://b7mrbfs50coao" path="res://MiniG/minigames/Vendor/streat/coco_closed.png" id="12_n8tgx"]
+[ext_resource type="Script" uid="uid://dvoxhgmhuod4h" path="res://MiniG/minigames/Vendor/cup.gd" id="13_1fl3x"]
+[ext_resource type="Texture2D" uid="uid://dj6f14hlsar65" path="res://MiniG/minigames/Vendor/streat/coco_opened.png" id="13_2noqn"]
+[ext_resource type="Texture2D" uid="uid://dnx0qdlld8077" path="res://MiniG/minigames/Vendor/streat/kutsaron.png" id="14_8k8mc"]
+[ext_resource type="Texture2D" uid="uid://belf1w1p1byry" path="res://MiniG/minigames/Vendor/streat/saucecon.png" id="15_h1ex6"]
+[ext_resource type="Script" uid="uid://lfmu0w4vqkmw" path="res://MiniG/minigames/Vendor/bottle.gd" id="15_n8tgx"]
+[ext_resource type="Texture2D" uid="uid://da1u74tru2ypj" path="res://MiniG/minigames/Vendor/streat/sauce.png" id="16_7sss4"]
+[ext_resource type="Texture2D" uid="uid://crsha3a0lb5in" path="res://MiniG/minigames/Vendor/streat/sauce_spicycon.png" id="17_ppwxx"]
+[ext_resource type="Texture2D" uid="uid://b8rd78kuuwpn1" path="res://MiniG/minigames/Vendor/streat/sauce_spicy.png" id="18_cb4qi"]
+[ext_resource type="Texture2D" uid="uid://bq4oq4rvg0dyd" path="res://MiniG/minigames/Vendor/streat/tray.png" id="19_8mmnc"]
+[ext_resource type="Texture2D" uid="uid://dqhl1i5tlfpyr" path="res://MiniG/minigames/Vendor/streat/order_sheet.png" id="20_dymrs"]
+[ext_resource type="Texture2D" uid="uid://oiq53k4aipki" path="res://MiniG/minigames/Vendor/streat/moneybill.png" id="21_mq4xe"]
+[ext_resource type="Texture2D" uid="uid://cx2rovi6bo6vm" path="res://MiniG/minigames/Vendor/streat/kikiam1.png" id="22_vlkc2"]
+[ext_resource type="Texture2D" uid="uid://b85kxigyjlcoc" path="res://MiniG/minigames/Vendor/streat/hand_mc.png" id="23_kblgt"]
+[ext_resource type="Texture2D" uid="uid://bbmvo5olffebd" path="res://MiniG/minigames/Vendor/streat/kikiam2.png" id="23_lcokm"]
+[ext_resource type="Texture2D" uid="uid://b64v5we4a7o7k" path="res://MiniG/minigames/Vendor/streat/kikiam3.png" id="24_mlyg3"]
+[ext_resource type="Texture2D" uid="uid://c5nif6v6oxge4" path="res://MiniG/minigames/Vendor/streat/kikiam2_1.png" id="25_currp"]
+[ext_resource type="Texture2D" uid="uid://buncy3ye3cyr" path="res://MiniG/minigames/Vendor/streat/kutsaron_scooped.png" id="25_h1ex6"]
+[ext_resource type="Texture2D" uid="uid://dm5l3w1vi1nqy" path="res://MiniG/minigames/Vendor/streat/kikiam2_2.png" id="26_hfry1"]
+[ext_resource type="Texture2D" uid="uid://cfph40e0wb637" path="res://MiniG/minigames/Vendor/streat/kikiam2_3.png" id="27_vuth3"]
+[ext_resource type="Texture2D" uid="uid://bovnt84k6bf2n" path="res://MiniG/minigames/Vendor/streat/fishball1.png" id="28_lth8c"]
+[ext_resource type="Texture2D" uid="uid://nyr241cqg0w1" path="res://MiniG/minigames/Vendor/streat/trash.png" id="28_n8tgx"]
+[ext_resource type="Texture2D" uid="uid://b714sphiqg44j" path="res://MiniG/minigames/Vendor/streat/r_trash.png" id="29_2noqn"]
+[ext_resource type="Texture2D" uid="uid://dauqisg6w6qqv" path="res://MiniG/minigames/Vendor/streat/fishball2.png" id="29_jbcrk"]
+[ext_resource type="Texture2D" uid="uid://bhihks8xqt17a" path="res://MiniG/minigames/Vendor/streat/fishball3.png" id="30_8h4h3"]
+[ext_resource type="Texture2D" uid="uid://cnwvrl5qordc7" path="res://MiniG/minigames/Vendor/streat/fishball2_1.png" id="31_qwvwr"]
+[ext_resource type="Texture2D" uid="uid://llkuqchaqkc4" path="res://MiniG/minigames/Vendor/streat/fishball2_2.png" id="32_gmyin"]
+[ext_resource type="Texture2D" uid="uid://d0pgfcww6kdbt" path="res://MiniG/minigames/Vendor/streat/fishball2_3.png" id="33_n6vt3"]
+[ext_resource type="Texture2D" uid="uid://c6k1p0f7d04ik" path="res://MiniG/minigames/Vendor/streat/squidball1.png" id="34_gjhkh"]
+[ext_resource type="Texture2D" uid="uid://bhsxfhkc321nv" path="res://MiniG/minigames/Vendor/streat/squidball2.png" id="35_wcgto"]
+[ext_resource type="Texture2D" uid="uid://cj6k7woebf7qa" path="res://MiniG/minigames/Vendor/streat/squidball3.png" id="36_8ol6c"]
+[ext_resource type="Texture2D" uid="uid://dsmdyvq4kg1b5" path="res://MiniG/minigames/Vendor/streat/squidball2_1.png" id="37_1mqa2"]
+[ext_resource type="Texture2D" uid="uid://b7mdb8uvb8lkg" path="res://MiniG/minigames/Vendor/streat/squidball2_2.png" id="38_qaumt"]
+[ext_resource type="Texture2D" uid="uid://dhpprk3fnpnup" path="res://MiniG/minigames/Vendor/streat/squidball2_3.png" id="39_cjadm"]
+[ext_resource type="Script" uid="uid://d0smuk64rrm3i" path="res://MiniG/minigames/Vendor/plate.gd" id="53_ppwxx"]
+[ext_resource type="Texture2D" uid="uid://qyag7o7c2nor" path="res://MiniG/minigames/Vendor/streat/plate.png" id="54_cb4qi"]
+
+[node name="StreetFood" type="Node2D" unique_id=1717550355]
+script = ExtResource("1_jeenx")
+container_zoom = 2.0
+hand_textures = Array[Texture2D]([ExtResource("2_e3ard"), ExtResource("3_0lb2u"), ExtResource("4_c3nt4")])
+paper_textures = Array[Texture2D]([ExtResource("5_8k8mc"), ExtResource("6_h1ex6"), ExtResource("20_dymrs")])
+table_textures = Array[Texture2D]([ExtResource("8_8mmnc"), ExtResource("2_qdggj"), ExtResource("10_dymrs")])
+
+[node name="Table" type="Sprite2D" parent="." unique_id=325491700]
+position = Vector2(572, 326.59644)
+scale = Vector2(0.81110054, 0.8531157)
+texture = ExtResource("2_qdggj")
+
+[node name="RawContainer" type="Node2D" parent="." unique_id=347086274]
+position = Vector2(134, 553)
+scale = Vector2(0.4, 0.4)
+
+[node name="Lid" type="Sprite2D" parent="RawContainer" unique_id=467721175]
+position = Vector2(7.5000076, -22.5)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("6_22yui")
+
+[node name="Body" type="Sprite2D" parent="RawContainer" unique_id=1608207395]
+position = Vector2(5, -17.499998)
+texture = ExtResource("7_1fl3x")
+
+[node name="KikiamPile" type="Node2D" parent="RawContainer" unique_id=975466820]
+position = Vector2(-142.49998, -12.500061)
+
+[node name="FishballPile" type="Node2D" parent="RawContainer" unique_id=410092212]
+position = Vector2(-64.99999, 4.9999995)
+
+[node name="SquidballPile" type="Node2D" parent="RawContainer" unique_id=805661920]
+position = Vector2(77.49999, 4.9999995)
+
+[node name="Fryer" type="Node2D" parent="." unique_id=1644891690]
+
+[node name="Body" type="Sprite2D" parent="Fryer" unique_id=1245466260]
+position = Vector2(1007.00006, 147)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_5bce7")
+
+[node name="Oiled" type="Sprite2D" parent="Fryer" unique_id=1812508837]
+position = Vector2(1002.99994, 148.99998)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_w212r")
+
+[node name="StrainerSpot1" type="Marker2D" parent="Fryer" unique_id=1026911957]
+position = Vector2(936, 175)
+
+[node name="StrainerSpot2" type="Marker2D" parent="Fryer" unique_id=823236086]
+position = Vector2(1072, 175)
+
+[node name="Strainer1" type="Node2D" parent="." unique_id=1367003059]
+position = Vector2(-2, -1)
+script = ExtResource("9_22yui")
+
+[node name="Body" type="Sprite2D" parent="Strainer1" unique_id=1354099186]
+position = Vector2(935, 171)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_e3ard")
+
+[node name="Slot1" type="Marker2D" parent="Strainer1" unique_id=1609886302]
+position = Vector2(933, 111)
+
+[node name="Slot2" type="Marker2D" parent="Strainer1" unique_id=1885094307]
+position = Vector2(935, 135)
+
+[node name="Slot3" type="Marker2D" parent="Strainer1" unique_id=1015421727]
+position = Vector2(935, 161)
+
+[node name="Slot4" type="Marker2D" parent="Strainer1" unique_id=1433001146]
+position = Vector2(940, 189)
+
+[node name="Strainer2" type="Node2D" parent="." unique_id=325262804]
+position = Vector2(-1, 3)
+script = ExtResource("9_22yui")
+
+[node name="Body" type="Sprite2D" parent="Strainer2" unique_id=1273061454]
+position = Vector2(1074, 168)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_0lb2u")
+
+[node name="Slot1" type="Marker2D" parent="Strainer2" unique_id=771910259]
+position = Vector2(1072, 110)
+
+[node name="Slot2" type="Marker2D" parent="Strainer2" unique_id=933200750]
+position = Vector2(1072, 135)
+
+[node name="Slot3" type="Marker2D" parent="Strainer2" unique_id=1509601368]
+position = Vector2(1072, 168)
+
+[node name="Slot4" type="Marker2D" parent="Strainer2" unique_id=546354659]
+position = Vector2(1074, 185)
+
+[node name="Tongs" type="Node2D" parent="." unique_id=1401171826]
+position = Vector2(811, 141)
+scale = Vector2(0.2, 0.2)
+
+[node name="Body" type="Sprite2D" parent="Tongs" unique_id=1069259974]
+texture = ExtResource("8_c3nt4")
+
+[node name="CupStack" type="Node2D" parent="." unique_id=102538542]
+script = ExtResource("13_1fl3x")
+food_scale = 0.8
+slot_offsets = Array[Vector2]([Vector2(-0.05, -0.05), Vector2(0.05, -0.05), Vector2(-0.05, 0.05), Vector2(0.04, 0.04)])
+
+[node name="Body" type="Sprite2D" parent="CupStack" unique_id=1340898103]
+position = Vector2(1061, 375)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_kblgt")
+
+[node name="BottleStack" type="Node2D" parent="." unique_id=1657571990]
+position = Vector2(-188, -372)
+script = ExtResource("15_n8tgx")
+
+[node name="Body" type="Sprite2D" parent="BottleStack" unique_id=2091105648]
+position = Vector2(219.99998, 537.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_22yui")
+
+[node name="Filled" type="Sprite2D" parent="BottleStack" unique_id=1279620820]
+position = Vector2(219, 542)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("11_1fl3x")
+
+[node name="CocoContainer" type="Node2D" parent="." unique_id=1442159423]
+
+[node name="Body" type="Sprite2D" parent="CocoContainer" unique_id=1149041659]
+position = Vector2(185, 149)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("12_n8tgx")
+
+[node name="Opened" type="Sprite2D" parent="CocoContainer" unique_id=1579740338]
+position = Vector2(182, 152)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("13_2noqn")
+
+[node name="Kutsaron" type="Sprite2D" parent="." unique_id=731804406]
+position = Vector2(377, 111)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("14_8k8mc")
+
+[node name="Scooped" type="Sprite2D" parent="Kutsaron" unique_id=843110674]
+texture = ExtResource("25_h1ex6")
+
+[node name="SauceSweet" type="Sprite2D" parent="." unique_id=534732892]
+position = Vector2(1077, 582)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("15_h1ex6")
+
+[node name="Topping" type="Sprite2D" parent="SauceSweet" unique_id=690884002]
+texture = ExtResource("16_7sss4")
+
+[node name="SauceSpicy" type="Sprite2D" parent="." unique_id=230999072]
+position = Vector2(964, 586)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("17_ppwxx")
+
+[node name="Topping" type="Sprite2D" parent="SauceSpicy" unique_id=2038962489]
+texture = ExtResource("18_cb4qi")
+
+[node name="Tray" type="Node2D" parent="." unique_id=2067262038]
+position = Vector2(123.00003, 359.99997)
+scale = Vector2(0.8, 0.8)
+
+[node name="Body" type="Sprite2D" parent="Tray" unique_id=2142402954]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_8mmnc")
+
+[node name="PlayerHand" type="Sprite2D" parent="." unique_id=1102358377]
+position = Vector2(1110.6, 207.00003)
+scale = Vector2(0.64000005, 0.64000005)
+texture = ExtResource("23_kblgt")
+offset = Vector2(0, 140)
+
+[node name="Trash" type="Sprite2D" parent="." unique_id=2088648322]
+position = Vector2(565, 652.00006)
+scale = Vector2(0.4970458, 0.55420053)
+texture = ExtResource("28_n8tgx")
+
+[node name="Red" type="Sprite2D" parent="Trash" unique_id=637615562]
+texture = ExtResource("29_2noqn")
+
+[node name="Hand" type="Sprite2D" parent="." unique_id=67296466]
+texture = ExtResource("2_e3ard")
+
+[node name="OrderPaper" type="Sprite2D" parent="Hand" unique_id=1800944288]
+position = Vector2(0, 110)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("20_dymrs")
+
+[node name="MoneyBill" type="Sprite2D" parent="." unique_id=1949232652]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("21_mq4xe")
+
+[node name="HandIn" type="Marker2D" parent="." unique_id=1958892934]
+position = Vector2(549, 56)
+
+[node name="HandOut" type="Marker2D" parent="." unique_id=2108328558]
+position = Vector2(538, -195)
+
+[node name="LoadSpot" type="Marker2D" parent="." unique_id=1650162853]
+position = Vector2(925, 379)
+
+[node name="CenterSpot" type="Marker2D" parent="." unique_id=1948110588]
+position = Vector2(577, 324)
+
+[node name="TrayOut" type="Marker2D" parent="." unique_id=738042518]
+position = Vector2(555, -198)
+
+[node name="TrayCenter" type="Marker2D" parent="." unique_id=1277305524]
+position = Vector2(578, 326)
+
+[node name="MoneyStart" type="Marker2D" parent="." unique_id=1893801049]
+position = Vector2(536, -194)
+
+[node name="MoneyEnd" type="Marker2D" parent="." unique_id=1565738866]
+position = Vector2(550, 117)
+
+[node name="ContainerSpot" type="Marker2D" parent="." unique_id=1074852192]
+position = Vector2(579, 321)
+
+[node name="Tip" type="Marker2D" parent="." unique_id=1416030219]
+position = Vector2(1152, 666)
+
+[node name="FoodTemplates" type="Node2D" parent="." unique_id=1161007122]
+position = Vector2(-103, 154)
+
+[node name="kikiam1" type="Sprite2D" parent="FoodTemplates" unique_id=1651983880]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("22_vlkc2")
+
+[node name="kikiam2" type="Sprite2D" parent="FoodTemplates" unique_id=2022568808]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("23_lcokm")
+
+[node name="kikiam3" type="Sprite2D" parent="FoodTemplates" unique_id=1840817454]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("24_mlyg3")
+
+[node name="kikiam2_1" type="Sprite2D" parent="FoodTemplates" unique_id=146261188]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("25_currp")
+
+[node name="kikiam2_2" type="Sprite2D" parent="FoodTemplates" unique_id=1948070189]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("26_hfry1")
+
+[node name="kikiam2_3" type="Sprite2D" parent="FoodTemplates" unique_id=112071445]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("27_vuth3")
+
+[node name="fishball1" type="Sprite2D" parent="FoodTemplates" unique_id=1276998010]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("28_lth8c")
+
+[node name="fishball2" type="Sprite2D" parent="FoodTemplates" unique_id=588420813]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("29_jbcrk")
+
+[node name="fishball3" type="Sprite2D" parent="FoodTemplates" unique_id=1910030940]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("30_8h4h3")
+
+[node name="fishball2_1" type="Sprite2D" parent="FoodTemplates" unique_id=621108550]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("31_qwvwr")
+
+[node name="fishball2_2" type="Sprite2D" parent="FoodTemplates" unique_id=1057980395]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("32_gmyin")
+
+[node name="fishball2_3" type="Sprite2D" parent="FoodTemplates" unique_id=159611711]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("33_n6vt3")
+
+[node name="squidball1" type="Sprite2D" parent="FoodTemplates" unique_id=1957141551]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("34_gjhkh")
+
+[node name="squidball2" type="Sprite2D" parent="FoodTemplates" unique_id=1864279988]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("35_wcgto")
+
+[node name="squidball3" type="Sprite2D" parent="FoodTemplates" unique_id=433172846]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("36_8ol6c")
+
+[node name="squidball2_1" type="Sprite2D" parent="FoodTemplates" unique_id=1646076632]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("37_1mqa2")
+
+[node name="squidball2_2" type="Sprite2D" parent="FoodTemplates" unique_id=664335093]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("38_qaumt")
+
+[node name="squidball2_3" type="Sprite2D" parent="FoodTemplates" unique_id=529842194]
+position = Vector2(218.15009, 400.59998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("39_cjadm")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=1363624435]
+offset_left = 302.0
+offset_top = 359.0
+offset_right = 342.0
+offset_bottom = 399.0
+
+[node name="ConfirmPanel" type="Control" parent="." unique_id=1717507505]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ConfirmButton" type="Button" parent="ConfirmPanel" unique_id=2005522931]
+layout_mode = 0
+offset_left = 875.0
+offset_top = 377.0
+offset_right = 975.0
+offset_bottom = 417.0
+text = "Serve"
+
+[node name="HoldButton" type="Button" parent="ConfirmPanel" unique_id=452373005]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 321.0
+offset_right = 976.0
+offset_bottom = 361.0
+text = "Back"
+
+[node name="OrderLabel" type="Label" parent="." unique_id=1861955705]
+offset_left = 15.0
+offset_top = 452.0
+offset_right = 55.0
+offset_bottom = 497.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 32
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=2102247243]
+offset_left = 418.0
+offset_top = 10.0
+offset_right = 458.0
+offset_bottom = 55.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 32
+
+[node name="DoneButton" type="Button" parent="." unique_id=1394499864]
+offset_left = 646.0
+offset_top = 80.0
+offset_right = 746.0
+offset_bottom = 120.0
+text = "Done"
+
+[node name="Plate" type="Sprite2D" parent="." unique_id=1953731885]
+position = Vector2(241, 476)
+script = ExtResource("53_ppwxx")
+spread = 0.025
+
+[node name="Body" type="Sprite2D" parent="Plate" unique_id=274361241]
+position = Vector2(136, 65)
+scale = Vector2(0.5384047, 0.5406504)
+texture = ExtResource("54_cb4qi")

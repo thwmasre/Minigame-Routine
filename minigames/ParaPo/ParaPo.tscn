@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://cbh1xug2nl3io"]
+
+[ext_resource type="Script" uid="uid://ryg8sth7frgy" path="res://MiniG/minigames/ParaPo/para_po.gd" id="1_7k25r"]
+[ext_resource type="Texture2D" uid="uid://1xb0ha7kneoi" path="res://MiniG/minigames/ParaPo/jeeeep/frame1.jpg" id="2_gn2wk"]
+[ext_resource type="Texture2D" uid="uid://c1lctioif7ukt" path="res://MiniG/minigames/ParaPo/jeeeep/frame2.jpg" id="3_65moy"]
+[ext_resource type="Texture2D" uid="uid://c2n8bmnh00u3i" path="res://MiniG/minigames/ParaPo/jeeeep/frain1.jpg" id="4_xq7ec"]
+[ext_resource type="Texture2D" uid="uid://b0x23dhtbrqei" path="res://MiniG/minigames/ParaPo/jeeeep/frain2.jpg" id="5_4ixdf"]
+[ext_resource type="Texture2D" uid="uid://bppxiq5iedvnv" path="res://MiniG/minigames/ParaPo/jeeeep/poor1.png" id="6_sdpc4"]
+[ext_resource type="Texture2D" uid="uid://bbvfghoi2gcry" path="res://MiniG/minigames/ParaPo/jeeeep/poor2.png" id="7_8xv6o"]
+[ext_resource type="Texture2D" uid="uid://brk4na2lsa3l4" path="res://MiniG/minigames/ParaPo/jeeeep/poor3.png" id="8_bf0k2"]
+[ext_resource type="Texture2D" uid="uid://d2mn8h3wbqqns" path="res://MiniG/minigames/ParaPo/jeeeep/poor4.png" id="9_b17pm"]
+[ext_resource type="Texture2D" uid="uid://dycng411g60lg" path="res://MiniG/minigames/ParaPo/jeeeep/okay1.png" id="10_3x2jr"]
+[ext_resource type="Texture2D" uid="uid://buu68peidbk5g" path="res://MiniG/minigames/ParaPo/jeeeep/okay2.png" id="11_4ryin"]
+[ext_resource type="Texture2D" uid="uid://x3in1mrud611" path="res://MiniG/minigames/ParaPo/jeeeep/rich1.png" id="12_ov0hq"]
+[ext_resource type="Texture2D" uid="uid://cx4ku477pns8m" path="res://MiniG/minigames/ParaPo/jeeeep/rich2.png" id="13_crn16"]
+[ext_resource type="Texture2D" uid="uid://c6y7gj30pu86m" path="res://MiniG/minigames/ParaPo/jeeeep/rare.png" id="14_hr8ts"]
+
+[node name="ParaPo" type="Control" unique_id=733906290]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7k25r")
+frame1 = ExtResource("2_gn2wk")
+frame2 = ExtResource("3_65moy")
+frain1 = ExtResource("4_xq7ec")
+frain2 = ExtResource("5_4ixdf")
+poor_textures = Array[Texture2D]([ExtResource("6_sdpc4"), ExtResource("7_8xv6o"), ExtResource("8_bf0k2"), ExtResource("9_b17pm")])
+okay_textures = Array[Texture2D]([ExtResource("10_3x2jr"), ExtResource("11_4ryin")])
+rich_textures = Array[Texture2D]([ExtResource("12_ov0hq"), ExtResource("13_crn16")])
+rare_textures = Array[Texture2D]([ExtResource("14_hr8ts")])
+jeep_scale = 0.8
+
+[node name="Background" type="TextureRect" parent="." unique_id=554758223]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Road" type="Control" parent="." unique_id=948666265]
+anchors_preset = 0
+offset_left = 2.0
+offset_top = 639.0
+offset_right = 1154.0
+offset_bottom = 789.0
+
+[node name="SpawnPoint" type="Marker2D" parent="Road" unique_id=765593748]
+position = Vector2(-1, 225)
+
+[node name="ParaPoButton" type="Button" parent="." unique_id=292830822]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 175.0
+offset_right = 631.0
+offset_bottom = 225.0
+text = "Para Po"
+
+[node name="TimerLabel" type="Label" parent="." unique_id=234043255]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1462587850]
+
+[node name="Popup" type="Panel" parent="." unique_id=182466666]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatsLabel" type="Label" parent="Popup" unique_id=151124003]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+horizontal_alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="Popup" unique_id=898748187]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 166.0
+offset_right = 70.0
+offset_bottom = 197.0
+text = "Confirm"
+
+[node name="PassButton" type="Button" parent="Popup" unique_id=1968964340]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 165.0
+offset_right = 297.0
+offset_bottom = 196.0
+text = "Pass"

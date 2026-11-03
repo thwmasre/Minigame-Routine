@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://xexdcfakwmgf"]
+
+[ext_resource type="Script" uid="uid://cya88exee5tb3" path="res://MiniG/minigames/Scrub street/scrub_game.gd" id="1_wthn6"]
+[ext_resource type="Texture2D" uid="uid://kv423ma1owba" path="res://MiniG/minigames/Scrub street/image_fff2ec26.jpg" id="2_3ieoj"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dctsh"]
+load_path = "res://.godot/imported/sponge.png-59a304a1877e88be0ae43b6f77390cfb.ctex"
+
+[node name="ScrubStreetGame" type="Control" unique_id=1808930628]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wthn6")
+
+[node name="Background" type="TextureRect" parent="." unique_id=217259377]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_3ieoj")
+
+[node name="Stack" type="Control" parent="." unique_id=1161779014]
+anchors_preset = 0
+offset_left = 57.0
+offset_top = 86.0
+offset_right = 346.0
+offset_bottom = 365.0
+
+[node name="DishClean" type="TextureRect" parent="." unique_id=1518696208]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DishDirty" type="TextureRect" parent="." unique_id=820011816]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1038183385]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="RinseButton" type="Button" parent="." unique_id=877591930]
+visible = false
+layout_mode = 0
+offset_left = 135.0
+offset_top = 318.0
+offset_right = 435.0
+offset_bottom = 434.0
+text = "Rinse!"
+
+[node name="TimerLabel" type="Label" parent="." unique_id=915430557]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1929039477]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 4.0
+offset_right = 123.0
+offset_bottom = 41.0
+horizontal_alignment = 1
+
+[node name="Sponge" type="TextureRect" parent="." unique_id=405304232]
+layout_mode = 0
+offset_left = 692.00006
+offset_top = 156.0
+offset_right = 1352.0
+offset_bottom = 816.0
+scale = Vector2(0.4376184, 0.41849607)
+mouse_filter = 2
+texture = SubResource("CompressedTexture2D_dctsh")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="RinseButton" to="." method="_on_rinse_button_pressed"]

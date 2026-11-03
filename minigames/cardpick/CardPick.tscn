@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://s5423ouqjd2u"]
+
+[ext_resource type="Script" uid="uid://boxep0ncvdjsl" path="res://MiniG/minigames/cardpick/card_pick.gd" id="1_i748q"]
+[ext_resource type="Texture2D" uid="uid://cnbh82rxerkre" path="res://icon.svg" id="2_n78mt"]
+
+[node name="CardPick" type="Control" unique_id=1804734295]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i748q")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1945992215]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card1" type="TextureButton" parent="." unique_id=1133740538]
+layout_mode = 1
+offset_left = 750.0
+offset_top = 250.0
+offset_right = 878.0
+offset_bottom = 378.0
+texture_normal = ExtResource("2_n78mt")
+
+[node name="Card2" type="TextureButton" parent="." unique_id=1308247244]
+layout_mode = 1
+offset_left = 300.0
+offset_top = 250.0
+offset_right = 428.0
+offset_bottom = 378.0
+texture_normal = ExtResource("2_n78mt")
+
+[node name="Card3" type="TextureButton" parent="." unique_id=540701732]
+layout_mode = 1
+offset_left = 525.0
+offset_top = 250.0
+offset_right = 653.0
+offset_bottom = 378.0
+texture_normal = ExtResource("2_n78mt")
