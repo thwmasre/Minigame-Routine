@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dhnvfu8nje46m"]
+
+[ext_resource type="Script" uid="uid://b303h46ioxhek" path="res://MiniG/minigames/WholeJeepGame/Jeep/jeep_ride.gd" id="1_asyoc"]
+[ext_resource type="Texture2D" uid="uid://bjddlweigsxo7" path="res://MiniG/minigames/WholeJeepGame/Jeep/Jeepimages/jeepinterior.jpg" id="2_asyoc"]
+
+[node name="JeepRide2" type="Control" unique_id=1061728539]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_asyoc")
+item_path = "res://MiniG/minigames/WholeJeepGame/Jeep/Jeepimages"
+
+[node name="Scenery" type="TextureRect" parent="." unique_id=2002192452]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Background" type="TextureRect" parent="." unique_id=1851891225]
+layout_mode = 0
+offset_right = 1161.0
+offset_bottom = 649.0
+texture = ExtResource("2_asyoc")
+expand_mode = 1
+
+[node name="Passengers" type="Control" parent="." unique_id=497089303]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TimeLabel" type="Label" parent="." unique_id=374504732]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

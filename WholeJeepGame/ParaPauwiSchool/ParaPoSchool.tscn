@@ -1,0 +1,381 @@
+[gd_scene format=3 uid="uid://dkvqvrglat7b0"]
+
+[ext_resource type="Script" uid="uid://dj6srhpd0qc6l" path="res://MiniG/minigames/WholeJeepGame/jeep_picker.gd" id="1_quic7"]
+[ext_resource type="Texture2D" uid="uid://bbmy3yq3axjsk" path="res://MiniG/minigames/WholeJeepGame/jeeeep/poor1.png" id="2_tgqx0"]
+[ext_resource type="Texture2D" uid="uid://bf5d2ds3dxam1" path="res://MiniG/minigames/WholeJeepGame/jeeeep/ParaPoSchool.jpg" id="2_w7ixp"]
+[ext_resource type="Texture2D" uid="uid://ciw5rbao8o31e" path="res://MiniG/minigames/WholeJeepGame/jeeeep/poor2.png" id="3_w7ixp"]
+[ext_resource type="Texture2D" uid="uid://db13hjarvx3fy" path="res://MiniG/minigames/WholeJeepGame/jeeeep/poor3.png" id="4_qm0qn"]
+[ext_resource type="Texture2D" uid="uid://bf13sitgc3w2u" path="res://MiniG/minigames/WholeJeepGame/jeeeep/okay1.png" id="5_o04kh"]
+[ext_resource type="Texture2D" uid="uid://btemghvoxqbnv" path="res://MiniG/minigames/WholeJeepGame/jeeeep/okay2.png" id="6_1bk7i"]
+[ext_resource type="Texture2D" uid="uid://bq4r1ui8bfbwj" path="res://MiniG/minigames/WholeJeepGame/jeeeep/rich1.png" id="7_oo1e4"]
+[ext_resource type="Texture2D" uid="uid://ck7jfqbx7xbkr" path="res://MiniG/minigames/WholeJeepGame/jeeeep/rich2.png" id="8_gs838"]
+[ext_resource type="Texture2D" uid="uid://d3kr2qbtj8r8p" path="res://MiniG/minigames/WholeJeepGame/jeeeep/rare.png" id="9_y3pb7"]
+[ext_resource type="PackedScene" uid="uid://dhnvfu8nje46m" path="res://MiniG/minigames/WholeJeepGame/Jeep/JeepRide.tscn" id="11_qm0qn"]
+[ext_resource type="Script" uid="uid://brrhqwnhpgura" path="res://MiniG/minigames/WholeJeepGame/destination_button.gd" id="14_g6ggf"]
+[ext_resource type="Texture2D" uid="uid://c7hctb1visfmd" path="res://MiniG/minigames/WholeJeepGame/button/bp.jpg" id="15_a3ijd"]
+[ext_resource type="Texture2D" uid="uid://ccct21up1amtf" path="res://MiniG/minigames/WholeJeepGame/button/bpc.jpg" id="16_gav0o"]
+[ext_resource type="Texture2D" uid="uid://dh2srk4yo4w8x" path="res://MiniG/minigames/WholeJeepGame/button/bnp.jpg" id="17_sfos1"]
+[ext_resource type="Texture2D" uid="uid://c638kng5hxb1x" path="res://MiniG/minigames/WholeJeepGame/button/bnpc.jpg" id="18_01f4r"]
+[ext_resource type="Script" uid="uid://bipn4xagx0q7a" path="res://MiniG/minigames/WholeJeepGame/category_button.gd" id="18_g6ggf"]
+[ext_resource type="Texture2D" uid="uid://yx3512opmhvb" path="res://MiniG/minigames/WholeJeepGame/button/cp.jpg" id="19_ta1nh"]
+[ext_resource type="Texture2D" uid="uid://c34thb7b8iptk" path="res://MiniG/minigames/WholeJeepGame/button/cpc.jpg" id="20_sa5li"]
+[ext_resource type="Texture2D" uid="uid://c6smtswp8ralh" path="res://MiniG/minigames/WholeJeepGame/button/m.jpg" id="21_mbhq7"]
+[ext_resource type="Texture2D" uid="uid://bseob8kanhkau" path="res://MiniG/minigames/WholeJeepGame/button/mc.jpg" id="22_wjiex"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kq2au"]
+load_path = "res://.godot/imported/h.jpg-db76d2f38480115e516d6cd21ac4b9b0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m3xs7"]
+load_path = "res://.godot/imported/hc.jpg-c0c49abe5f5c9effffa56d73654abb5f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qdman"]
+load_path = "res://.godot/imported/image_df89e642.jpg-943ebdcef0ffc529b65a2a3bf1fa2ae4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hcebu"]
+load_path = "res://.godot/imported/image_8207081c.jpg-66368fec3893281260bc03548e7ae10d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pf0nk"]
+load_path = "res://.godot/imported/sf.jpg-d5b6fe55a844ff958dc40340cba07127.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5mlwt"]
+load_path = "res://.godot/imported/sfc.jpg-ead82943243c5e7229c9025bbbd856e9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l4rhv"]
+load_path = "res://.godot/imported/playerback.png-db549036ce94765a2f8efb4f21db57f0.ctex"
+
+[node name="ParaPoSchool" type="Control" unique_id=733906290]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_quic7")
+backgrounds = Array[Texture2D]([ExtResource("2_w7ixp")])
+poor_textures = Array[Texture2D]([ExtResource("2_tgqx0"), ExtResource("3_w7ixp"), ExtResource("4_qm0qn")])
+okay_textures = Array[Texture2D]([ExtResource("5_o04kh"), ExtResource("6_1bk7i")])
+rich_textures = Array[Texture2D]([ExtResource("7_oo1e4"), ExtResource("8_gs838")])
+rare_textures = Array[Texture2D]([ExtResource("9_y3pb7")])
+ride_scene = ExtResource("11_qm0qn")
+
+[node name="Background" type="TextureRect" parent="." unique_id=554758223]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Road" type="Control" parent="." unique_id=948666265]
+anchors_preset = 0
+offset_left = 2.0
+offset_top = 639.0
+offset_right = 1154.0
+offset_bottom = 789.0
+
+[node name="SpawnPoint" type="Marker2D" parent="Road" unique_id=765593748]
+position = Vector2(-2, 22)
+
+[node name="Destinations" type="Control" parent="." unique_id=2028439623]
+anchors_preset = 0
+offset_left = 111.0
+offset_top = 96.0
+offset_right = 151.0
+offset_bottom = 136.0
+
+[node name="home" type="TextureButton" parent="Destinations" unique_id=173069902]
+layout_mode = 0
+offset_left = 14.0
+offset_top = -27.0
+offset_right = 214.0
+offset_bottom = 173.0
+texture_normal = SubResource("CompressedTexture2D_kq2au")
+texture_hover = SubResource("CompressedTexture2D_m3xs7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "home"
+how_far = 0
+
+[node name="ParkCategory" type="TextureButton" parent="Destinations" unique_id=158278242 node_paths=PackedStringArray("options")]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 253.0
+offset_right = 214.0
+offset_bottom = 453.0
+texture_normal = SubResource("CompressedTexture2D_qdman")
+texture_hover = SubResource("CompressedTexture2D_hcebu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_g6ggf")
+options = NodePath("../../MuseumOptions")
+
+[node name="FoodCategory" type="TextureButton" parent="Destinations" unique_id=322386941 node_paths=PackedStringArray("options")]
+layout_mode = 0
+offset_left = 771.0
+offset_top = 250.0
+offset_right = 971.0
+offset_bottom = 450.0
+texture_normal = SubResource("CompressedTexture2D_pf0nk")
+texture_hover = SubResource("CompressedTexture2D_5mlwt")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_g6ggf")
+options = NodePath("../../FoodOptions")
+
+[node name="Mall" type="TextureButton" parent="Destinations" unique_id=1921268084]
+layout_mode = 0
+offset_left = 758.0
+offset_top = -11.0
+offset_right = 958.0
+offset_bottom = 189.0
+texture_normal = ExtResource("21_mbhq7")
+texture_hover = ExtResource("22_wjiex")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "mall"
+how_far = 2
+
+[node name="MuseumOptions" type="Control" parent="." unique_id=865107935]
+anchors_preset = 0
+offset_left = 111.0
+offset_top = 96.0
+offset_right = 151.0
+offset_bottom = 136.0
+
+[node name="Panel" type="Panel" parent="MuseumOptions" unique_id=1717018330]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 243.0
+offset_right = 981.0
+offset_bottom = 457.0
+
+[node name="BrgyMuseum" type="TextureButton" parent="MuseumOptions" unique_id=500725229]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 253.0
+offset_right = 214.0
+offset_bottom = 453.0
+texture_normal = ExtResource("15_a3ijd")
+texture_hover = ExtResource("16_gav0o")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "park1"
+how_far = 0
+
+[node name="BayanMuseum" type="TextureButton" parent="MuseumOptions" unique_id=1585383905]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 249.0
+offset_right = 563.0
+offset_bottom = 449.0
+texture_normal = ExtResource("17_sfos1")
+texture_hover = ExtResource("18_01f4r")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "park2"
+
+[node name="CityMuseum" type="TextureButton" parent="MuseumOptions" unique_id=1350587460]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 249.0
+offset_right = 970.0
+offset_bottom = 449.0
+texture_normal = ExtResource("19_ta1nh")
+texture_hover = ExtResource("20_sa5li")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "park3"
+how_far = 2
+
+[node name="BackButton" type="Button" parent="MuseumOptions" unique_id=1490924761]
+layout_mode = 0
+offset_left = 897.0
+offset_top = 203.0
+offset_right = 972.0
+offset_bottom = 239.0
+theme_override_font_sizes/font_size = 20
+text = "Return
+"
+
+[node name="FoodOptions" type="Control" parent="." unique_id=135741052]
+anchors_preset = 0
+offset_left = 111.0
+offset_top = 96.0
+offset_right = 151.0
+offset_bottom = 136.0
+
+[node name="Panel" type="Panel" parent="FoodOptions" unique_id=429290666]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 243.0
+offset_right = 981.0
+offset_bottom = 457.0
+
+[node name="BrgyPark" type="TextureButton" parent="FoodOptions" unique_id=1169125605]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 253.0
+offset_right = 214.0
+offset_bottom = 453.0
+texture_normal = ExtResource("15_a3ijd")
+texture_hover = ExtResource("16_gav0o")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "park1"
+how_far = 0
+
+[node name="BayanPark" type="TextureButton" parent="FoodOptions" unique_id=1974071400]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 249.0
+offset_right = 563.0
+offset_bottom = 449.0
+texture_normal = ExtResource("17_sfos1")
+texture_hover = ExtResource("18_01f4r")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "park2"
+
+[node name="CityPark" type="TextureButton" parent="FoodOptions" unique_id=978436449]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 249.0
+offset_right = 970.0
+offset_bottom = 449.0
+texture_normal = ExtResource("19_ta1nh")
+texture_hover = ExtResource("20_sa5li")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("14_g6ggf")
+destination_id = "park3"
+how_far = 2
+
+[node name="BackButton" type="Button" parent="FoodOptions" unique_id=823034390]
+layout_mode = 0
+offset_left = 897.0
+offset_top = 203.0
+offset_right = 972.0
+offset_bottom = 239.0
+theme_override_font_sizes/font_size = 20
+text = "Return
+"
+
+[node name="char" type="Sprite2D" parent="." unique_id=312971920]
+position = Vector2(585, 473.00476)
+scale = Vector2(0.29049313, 0.30500796)
+texture = SubResource("CompressedTexture2D_l4rhv")
+
+[node name="ParaPoButton" type="Button" parent="." unique_id=292830822]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 175.0
+offset_right = 631.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 20
+text = "Para Po"
+
+[node name="TimerLabel" type="Label" parent="." unique_id=234043255]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1462587850]
+
+[node name="Popup" type="Panel" parent="." unique_id=182466666]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatsLabel" type="Label" parent="Popup" unique_id=151124003]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="Popup" unique_id=898748187]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 166.0
+offset_right = 70.0
+offset_bottom = 197.0
+theme_override_font_sizes/font_size = 20
+text = "Confirm"
+
+[node name="PassButton" type="Button" parent="Popup" unique_id=1968964340]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 165.0
+offset_right = 297.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 20
+text = "Pass"
+
+[node name="ParaPoMarkers" type="Node2D" parent="." unique_id=1638636001]
+position = Vector2(585, 202)
+
+[node name="Pos1" type="Marker2D" parent="ParaPoMarkers" unique_id=1626350824]
+position = Vector2(147, 0)
+
+[node name="Pos2" type="Marker2D" parent="ParaPoMarkers" unique_id=1337994196]
+
+[node name="Pos3" type="Marker2D" parent="ParaPoMarkers" unique_id=1571601758]
+position = Vector2(-152, 0)
+
+[node name="FarePopup" type="Panel" parent="." unique_id=275994275]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -100.0
+offset_right = 150.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FareLabel" type="Label" parent="FarePopup" unique_id=973553125]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="ConfirmFareButton" type="Button" parent="FarePopup" unique_id=1343551917]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 166.0
+offset_right = 70.0
+offset_bottom = 197.0
+theme_override_font_sizes/font_size = 20
+text = "Confirm"
+
+[node name="HoldButton" type="Button" parent="FarePopup" unique_id=1986216687]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 166.0
+offset_right = 296.0
+offset_bottom = 202.0
+theme_override_font_sizes/font_size = 20
+text = "Hold
+"
